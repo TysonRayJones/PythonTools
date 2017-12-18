@@ -1,4 +1,12 @@
 
+'''
+Gets memory usage of Linux python process
+
+Tyson Jones, Nov 2017
+tyson.jones@materials.ox.ac.uk
+'''
+
+
 _FIELDS = ['VmRSS', 'VmHWM', 'VmSize', 'VmPeak']
 
 
