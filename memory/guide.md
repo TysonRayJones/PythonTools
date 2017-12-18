@@ -14,7 +14,7 @@ Calling
 get_memory()
 ```
 returns a dictionary with keys `VmHWM`, `VmPeak`, `VmRSS` and `VmSize`, e.g.
-```Python
+```python
 {'VmHWM': 6436000, 'VmPeak': 122260000, 'VmRSS': 6436000, 'VmSize': 122244000}
 ```
 though will raise a `FileNotFoundError` if ran on a non-linux machine.
