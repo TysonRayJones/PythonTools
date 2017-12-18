@@ -2,7 +2,7 @@
 
 The module
 
-```C
+```python
 from memorymeasure import get_memory
 ```
 provides a single function `get_memory` which returns the current and peak, 
@@ -10,14 +10,14 @@ real and virtual memories (in bytes, accurate to ~kilobytes) used by your Python
 in a dictionary. The same module but in C can be found [here](https://github.com/TysonRayJones/CTools/tree/master/memory).
 
 Calling
-```Python
+```python
 get_memory()
 ```
 returns a dictionary with keys `VmHWM`, `VmPeak`, `VmRSS` and `VmSize`, e.g.
 ```Python
 {'VmHWM': 6436000, 'VmPeak': 122260000, 'VmRSS': 6436000, 'VmSize': 122244000}
 ```
-though will throw a `FileNotFoundError` if ran on a non-linux machine.
+though will raise a `FileNotFoundError` if ran on a non-linux machine.
 
 --------------------
 
