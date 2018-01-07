@@ -35,6 +35,8 @@ a dictionary where each key is a parameter name and each item is a list of value
 
 For example,
 ```python
+from param_sweeper import save_script
+
 fields = {
     'memory': 8,
     'job_name': 'abc_sweep',
