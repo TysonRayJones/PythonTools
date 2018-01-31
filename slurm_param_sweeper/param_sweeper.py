@@ -98,7 +98,7 @@ PARAM_EXPRS = {
 
 def _to_bash(obj):
     if isinstance(obj, range):
-        return _seq(obj.start, obj.stop, obj.step)
+        return _seq(obj.start, obj.stop - 1, obj.step)
     if isinstance(obj, list) or isinstance(obj, tuple):
         return _arr(obj)
     raise ValueError('Unknown object type %s' % type(obj).__name__)
